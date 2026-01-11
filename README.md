@@ -1,170 +1,123 @@
-📊 Customer Churn & Risk Analysis | Power BI
-📌 Project Overview
+# 📊 Customer Churn & Risk Analysis | Power BI
 
-Customer churn is one of the most critical challenges for subscription-based businesses. This project analyzes customer churn patterns using the Telco Customer Churn dataset, focusing on who is leaving, why they are leaving, and how much revenue is at risk.
+## 📌 Project Overview
 
-The project is built using Power BI, with strong emphasis on:
+Customer churn is one of the most critical challenges for subscription-based businesses.  
+This project analyzes customer churn patterns using the **Telco Customer Churn dataset**, focusing on **who is leaving, why they are leaving, and how much revenue is at risk**.
 
-Churn behavior analysis
+The analysis is implemented in **Power BI** with an emphasis on business-driven insights rather than just visualizations.
 
-Revenue impact quantification
+The project consists of **two focused dashboards**:
+1. **Customer Churn Analysis**
+2. **Customer Risk Analysis**
 
-Identification of high-risk customer segments
+---
 
-The solution is divided into two focused dashboards:
+## 📂 Dataset
 
-Customer Churn Analysis
+- **Source:** Telco Customer Churn (Kaggle)
+- **Total Records:** 7,043 customers
+- **Key Attributes:**
+  - Customer churn status
+  - Tenure (customer lifetime)
+  - Monthly & total charges
+  - Contract type
+  - Payment method
+  - Internet service
+  - Subscribed services
 
-Customer Risk Analysis
+---
 
-📂 Dataset
+## 🧹 Data Preparation & Modeling
 
-Source: Telco Customer Churn (Kaggle)
+Data transformation was performed using **Power Query**, including:
+- Cleaning and type conversion of `TotalCharges`
+- Handling missing and inconsistent values
+- Creating churn indicators
+- Grouping customers into tenure buckets
 
-Records: 7,043 customers
+### 🔢 Key DAX Measures
+- Total Customers  
+- Churned Customers  
+- Churn Rate (%)  
+- Total Revenue  
+- Revenue Lost (Churned)  
+- Average Monthly Charges (Churned vs Retained)
 
-Key Fields:
+The data model was intentionally kept simple to ensure clarity, performance, and interpretability.
 
-Churn status
+---
 
-Tenure
+## 📊 Dashboard 1: Customer Churn Analysis
 
-Monthly & Total charges
+**Objective:** Analyze overall churn trends and quantify business impact.
 
-Contract type
+### Key Insights
+- Overall churn rate and churned customer count
+- Revenue lost due to churn
+- Churn distribution across tenure groups
+- Churn rate by contract type
+- Average monthly charges comparison (Churned vs Retained)
+- Impact of subscribed services on churn behavior
 
-Payment method
+### Business Questions Answered
+- How severe is customer churn?
+- Which customer lifecycle stage is most vulnerable?
+- Which contracts and services are driving churn?
 
-Internet service
+---
 
-Subscribed services
+## 🚨 Dashboard 2: Customer Risk Analysis
 
-🧹 Data Preparation & Modeling
+**Objective:** Identify high-risk customer segments and revenue exposure.
 
-Data preparation was performed using Power Query, including:
+### Key Insights
+- Churn by payment method
+- Churn by internet service type
+- Churn by contract type
+- Customer distribution across internet services
+- Monthly charge exposure by service type
+- Revenue at risk from churned customers
 
-Cleaning and converting TotalCharges
+### Business Questions Answered
+- Which customer segments pose the highest churn risk?
+- Where is the maximum revenue leakage occurring?
+- Which factors should retention strategies prioritize?
 
-Creating a binary churn indicator
+---
 
-Bucketing customers into tenure groups
+## 🧠 Key Findings
 
-Handling missing and inconsistent values
+- Month-to-month contracts show the highest churn rates
+- Fiber optic customers contribute the most to churn-related revenue loss
+- Customers in early tenure stages are significantly more likely to churn
+- Higher monthly charges correlate strongly with churn
+- Lack of support services (Tech Support, Online Security) increases churn probability
 
-Key DAX Measures
+---
 
-Total Customers
+## 🛠 Tools & Technologies
 
-Churned Customers
+- **Power BI Desktop**
+- **Power Query**
+- **DAX**
+- **Data Modeling**
+- **Interactive Dashboards**
 
-Churn Rate (%)
+---
 
-Total Revenue
+## 📈 Skills Demonstrated
 
-Revenue Lost (Churned)
+- Customer churn analysis
+- Revenue impact assessment
+- Business-oriented dashboard design
+- Data cleaning & transformation
+- KPI development using DAX
+- Analytical storytelling with visuals
 
-Average Monthly Charges (Churned vs Retained)
+---
 
-The model was intentionally kept simple and readable to ensure interpretability and performance.
+## 📌 Conclusion
 
-📊 Dashboard 1: Customer Churn Analysis
-
-Objective: Understand overall churn trends and quantify business impact.
-
-Key Insights Provided
-
-Overall churn rate and total churned customers
-
-Revenue lost due to churn
-
-Churn distribution across tenure groups
-
-Churn rate by contract type
-
-Comparison of average monthly charges between churned and retained customers
-
-Impact of subscribed services on churn behavior
-
-Business Value
-
-This dashboard answers:
-
-How severe is churn?
-
-Which customer lifecycle stage is most vulnerable?
-
-Which contracts and services drive higher churn?
-
-🚨 Dashboard 2: Customer Risk Analysis
-
-Objective: Identify high-risk customer segments and revenue exposure.
-
-Key Insights Provided
-
-Churn concentration by:
-
-Payment method
-
-Internet service type
-
-Contract type
-
-Customer distribution across services
-
-Monthly charge exposure by internet service
-
-Revenue at risk from churned customers
-
-High-risk customer profiles using slicers and filters
-
-Business Value
-
-This dashboard helps decision-makers:
-
-Pinpoint churn hotspots
-
-Prioritize retention strategies
-
-Target high-risk customers before revenue loss occurs
-
-🧠 Key Findings
-
-Month-to-month contracts have significantly higher churn
-
-Fiber optic customers contribute the most to churn-related revenue loss
-
-Early-tenure customers are the most vulnerable
-
-Customers with higher monthly charges churn at a higher rate
-
-Lack of support services (Tech Support, Online Security) correlates with churn
-
-🛠 Tools & Technologies
-
-Power BI Desktop
-
-Power Query
-
-DAX
-
-Data Modeling
-
-Interactive Visual Analytics
-
-📈 Skills Demonstrated
-
-Business-oriented data analysis
-
-Churn and retention analytics
-
-Revenue impact assessment
-
-Dashboard design & storytelling
-
-Data cleaning and transformation
-
-KPI creation using DAX
-
-📌 Conclusion
-
-This project demonstrates how raw customer data can be transformed into actionable insights that directly support customer retention and revenue protection strategies. The dashboards are designed for both executive overview and operational risk analysis, making them suitable for real-world business use.
+This project demonstrates how customer data can be transformed into **actionable insights** that support **customer retention and revenue protection strategies**.  
+The dashboards are designed to serve both **executive-level overview** and **operatio**
